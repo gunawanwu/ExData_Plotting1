@@ -1,9 +1,3 @@
-getwd()
-setwd("C:/Git_Clarivate/_RStudio/ExData_Plotting1")
-
-#calculate a rough estimate of how much memory required in GB for dataset with 2075259 rows and 9 columns
-round(2075259*9*8/2^{20}/1024, 2) #0.14 GB RAM required
-
 #read full data from household_power_consumption.txt
 data <- read.csv("household_power_consumption.txt", header=T, sep=';', na.strings="?", 
                       nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
